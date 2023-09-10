@@ -1,0 +1,16 @@
+@media (min-width: 576px) {
+	.header {
+		.green {
+			width: 35%;
+			height: 100vh;
+			right: 0;
+			background-color: rgb(204 243 129);
+		}
+		&__texts {
+			left: 4em;
+		}
+		&__text{
+			font-size: 1.2rem;
+		}
+	}
+}
