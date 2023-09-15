@@ -1,3 +1,11 @@
 @media (min-width: 768px) {
-	
+	.header {
+		&__texts {
+			top: 45%;
+		}
+		&__ {
+			bottom: 1em;
+			font-size: 3rem;
+		}
+	}
 }

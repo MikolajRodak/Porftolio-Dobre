@@ -42,7 +42,7 @@
 .hamburger-inner::after {
 	width: 40px;
 	height: 4px;
-	background-color: #000;
+	background-color: #fff;
 	border-radius: 4px;
 	position: absolute;
 	transition-property: transform;
@@ -97,7 +97,12 @@
 		top: 90%;
 		left: 0;
 		background-color: rgb(72 49 212);
-		transition: top 0.4s;
+		transition: top 0.3s;
+		z-index: 1;
+	}
+
+	&__button:hover {
+		border: 1px solid rgb(204 243 129);
 	}
 
 	&__button:hover::before {
@@ -106,4 +111,85 @@
 	&__button:hover .arrow {
 		transform: translateX(100px);
 	}
+	&__button:hover .txt {
+		color: rgb(204 243 129);
+		transform: translateX(15px);
+	}
+	&__button:hover .svg {
+		visibility: visible;
+		transform: translateX(-0.4em);
+		z-index: 10;
+	}
+}
+
+@keyframes bounce2 {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-30px);
+	}
+	60% {
+		transform: translateY(-15px);
+	}
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+.square {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border: 1px solid rgba(0, 0, 0, 0.35);
+
+	animation: rotation 20s infinite linear;
+	z-index: 2;
+}
+.square-one {
+	right: 8%;
+	top: 17%;
+}
+
+.square-two {
+	left: 10%;
+	top: 50%;
+	animation: rotation 20s infinite linear reverse;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.section__heading {
+	position: relative;
+	margin-bottom: 2em;
+	font-size: 1.6rem;
+	font-weight: 300;
+	text-align: center;
+	color: $white;
+	letter-spacing: 2px;
+}
+
+.section {
+	padding: 6em 2em;
+}
+.section__underline {
+	position: absolute;
+	text-align: left;
+	width: 30%;
+	border-bottom: 3px solid $black;
+	transform: translateX(-50%);
 }

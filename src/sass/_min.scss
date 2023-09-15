@@ -7,10 +7,11 @@
 			background-color: rgb(204 243 129);
 		}
 		&__texts {
+			max-width: 50%;
 			left: 4em;
 		}
-		&__text{
-			font-size: 1.2rem;
+		&__text {
+			width: 70%;
 		}
 	}
 }

@@ -1,0 +1,14 @@
+@media (min-width: 1200px) {
+	.header {
+		&__texts {
+			top: 50%;
+			left: 12%;
+		}
+		.grid {
+			display: block;
+		}
+		.grid2 {
+			display: block;
+		}
+	}
+}
