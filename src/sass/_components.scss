@@ -185,7 +185,13 @@
 
 .section {
 	padding: 6em 2em;
+	background-color: $main-color;
 }
+
+.light-section{
+	background-color: $main-color rgb(114, 95, 236);
+}
+
 .section__underline {
 	position: absolute;
 	text-align: left;
