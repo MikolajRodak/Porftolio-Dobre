@@ -29,7 +29,7 @@
                 <li class="nav__active--item">About me</li>
             </a>
             <a href="#skills">
-                <li class="nav__active--item">askills</li>
+                <li class="nav__active--item">skills</li>
             </a>
             <a href="#contact">
                 <li class="nav__active--item">Contact</li>
@@ -342,63 +342,75 @@
                 </div>
         </section>
 
-        <section class="projects section light-section padding-section" id="contact">
+        <section class="projects section light-section padding-section" id="projects">
             <div class="wrapper">
                 <div class="section__heading">
                     <h2>Projects</h2><span class="section__underline"></span>
                 </div>
 
                 <div class="projects__container">
-                    <div class="projects__box">
-                        <div class="projects__item one">
-                            <div class="projects__item-info">
-                                <h3 class="info-heading">Project Title</h3>
+                    <a href="#">
+                        <div class="projects__box">
+                            <div class="projects__item one">
+                                <div class="projects__item-info">
+                                    <h3 class="info-heading">Project Title</h3>
+                                </div>
+                                <div class="projects__item-shadow"></div>
                             </div>
-                            <div class="projects__item-shadow"></div>
                         </div>
-                    </div>
-                    <div class="projects__box">
-                        <div class="projects__item two">
-                            <div class="projects__item-info">
-                                <h3 class="info-heading">Project Title</h3>
+                    </a>
+                    <a href="#">
+                        <div class="projects__box">
+                            <div class="projects__item two">
+                                <div class="projects__item-info">
+                                    <h3 class="info-heading">Project Title</h3>
+                                </div>
+                                <div class="projects__item-shadow"></div>
                             </div>
-                            <div class="projects__item-shadow"></div>
                         </div>
-                    </div>
-                    <div class="projects__box">
-                        <div class="projects__item three">
-                            <div class="projects__item-info">
-                                <h3 class="info-heading">Project Title</h3>
+                    </a>
+                    <a href="#">
+                        <div class="projects__box">
+                            <div class="projects__item three">
+                                <div class="projects__item-info">
+                                    <h3 class="info-heading">Project Title</h3>
+                                </div>
+                                <div class="projects__item-shadow"></div>
                             </div>
-                            <div class="projects__item-shadow"></div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="projects__container">
-                    <div class="projects__box">
-                        <div class="projects__item four">
-                            <div class="projects__item-info">
-                                <h3 class="info-heading">Project Title</h3>
+                    <a href="#">
+                        <div class="projects__box">
+                            <div class="projects__item four">
+                                <div class="projects__item-info">
+                                    <h3 class="info-heading">Project Title</h3>
+                                </div>
+                                <div class="projects__item-shadow"></div>
                             </div>
-                            <div class="projects__item-shadow"></div>
                         </div>
-                    </div>
-                    <div class="projects__box">
-                        <div class="projects__item five">
-                            <div class="projects__item-info">
-                                <h3 class="info-heading">Project Title</h3>
+                    </a>
+                    <a href="#">
+                        <div class="projects__box">
+                            <div class="projects__item five">
+                                <div class="projects__item-info">
+                                    <h3 class="info-heading">Project Title</h3>
+                                </div>
+                                <div class="projects__item-shadow"></div>
                             </div>
-                            <div class="projects__item-shadow"></div>
                         </div>
-                    </div>
-                    <div class="projects__box">
-                        <div class="projects__item six">
-                            <div class="projects__item-info">
-                                <h3 class="info-heading">Project Title</h3>
+                    </a>
+                    <a href="#">
+                        <div class="projects__box">
+                            <div class="projects__item six">
+                                <div class="projects__item-info">
+                                    <h3 class="info-heading">Project Title</h3>
+                                </div>
+                                <div class="projects__item-shadow"></div>
                             </div>
-                            <div class="projects__item-shadow"></div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
 
@@ -408,37 +420,37 @@
 
         <section class="contact section light-section padding-section" id="contact">
             <div class="wrapper">
-                <div class="square square-one"></div>
-                <div class="square square-two"></div>
                 <div class="section__heading">
                     <h2>Interested...?</h2><span class="section__underline"></span>
                 </div>
-                <form>
+                <form target="_blank" action="https://formsubmit.co/el/501311fb4c558b4f1a2682ef06f5d909" method="POST">
                     <h1>Write to me!</h1>
                     <div class="form-box">
                         <label for="e-mail">E-mail</label>
-                        <input type="e-mail" id="email" placeholder="Write e-mail" />
+                        <input type="e-mail" name="email" id="email" placeholder="Write e-mail" />
                         <p class="error-text">error</p>
                     </div>
 
                     <div class="form-box">
                         <label for="text">Title</label>
-                        <input type="text" id="title" placeholder="Write title" />
+                        <input type="text" name="title" id="title" placeholder="Write title" />
+                        <p class="error-text">error</p>
                     </div>
 
                     <div class="form-box">
                         <label for="text">Your message</label>
-                        <textarea id="msg"></textarea>
+                        <textarea id="msg" name="textarea" placeholder="Your message"></textarea>
+                        <p class="error-text">error</p>
                     </div>
 
 
 
                     <div class="control-buttons">
-                        <button class="send">Wyslij</button>
+                        <button type="submit" class="send">Wyslij</button>
                     </div>
 
                     <div class="popup">
-                        <p>Formularz został poprawnie wysłany!</p>
+                        <p>Mail sent!</p>
                         <button class="close">Zamknij</button>
                     </div>
                 </form>
